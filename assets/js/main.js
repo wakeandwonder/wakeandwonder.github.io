@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 const form=document.getElementById("contact-form");const statusLine=document.getElementById("form-status");
 const menuToggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".main-nav");
 if(menuToggle&&nav){menuToggle.addEventListener("click",()=>{const open=nav.classList.toggle("is-open");menuToggle.setAttribute("aria-expanded",String(open))});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("is-open");menuToggle.setAttribute("aria-expanded","false")}))}
